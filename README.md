@@ -1,0 +1,2 @@
+# hashgen
+PHP Hash Generator
