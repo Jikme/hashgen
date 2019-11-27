@@ -7,7 +7,7 @@ class HashGenerator{
       $hexbytes = bin2hex($bytes);
       $secret = $timenow + $hexbytes;
       $hashvalue = hash('md5', $secret );
-      print_r($hashvalue);
+      print_r(trim($hashvalue));
   }
 
     // method declaration
@@ -17,7 +17,7 @@ class HashGenerator{
         $hexbytes = bin2hex($bytes);
         $secret = $timenow + $hexbytes;
         $hashvalue = hash('sha1', $secret );
-        print_r($hashvalue);
+        print_r(trim($hashvalue));
     }
 
     public static function getsha256() {
@@ -26,7 +26,7 @@ class HashGenerator{
         $hexbytes = bin2hex($bytes);
         $secret = $timenow + $hexbytes;
         $hashvalue = hash('sha256', $secret );
-        print_r($hashvalue);
+        print_r(trim($hashvalue));
     }
 }
 
