@@ -10,7 +10,6 @@ class HashGenerator{
       print_r(trim($hashvalue));
   }
 
-    // method declaration
     public static function getsha1() {
         $timenow  = time();
         $bytes = random_bytes(70);
@@ -28,6 +27,22 @@ class HashGenerator{
         $hashvalue = hash('sha256', $secret );
         print_r(trim($hashvalue));
     }
-}
 
+    public static function getsha384() {
+        $timenow  = time();
+        $bytes = random_bytes(90);
+        $hexbytes = bin2hex($bytes);
+        $secret = $timenow + $hexbytes;
+        $hashvalue = hash('sha384', $secret );
+        print_r(trim($hashvalue));
+    }
+    public static function getsha512() {
+        $timenow  = time();
+        $bytes = random_bytes(90);
+        $hexbytes = bin2hex($bytes);
+        $secret = $timenow + $hexbytes;
+        $hashvalue = hash('sha512', $secret );
+        print_r(trim($hashvalue));
+    }
+}
 ?>

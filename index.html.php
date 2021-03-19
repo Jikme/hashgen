@@ -23,6 +23,13 @@ require ("./hashgen.cs.php");
       <pre>RANDOM SHA256</pre>
       <pre><?php HashGenerator::getsha256();?></pre>
     </div>
-      <h5>TAP TO COPY</h5>
+    <div>
+      <pre>RANDOM SHA384</pre>
+      <pre><?php HashGenerator::getsha384();?></pre>
+    </div>
+    <div>
+      <pre>RANDOM SHA512</pre>
+      <pre><?php HashGenerator::getsha512();?></pre>
+    </div>
   </body>
 </html>
